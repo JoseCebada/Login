@@ -41,7 +41,8 @@
             // btnEntrar
             // 
             this.btnEntrar.BackColor = System.Drawing.Color.Green;
-            this.btnEntrar.Font = new System.Drawing.Font("MS Reference Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrar.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.btnEntrar.Location = new System.Drawing.Point(287, 239);
             this.btnEntrar.Name = "btnEntrar";
@@ -62,6 +63,7 @@
             this.lbInicio.Size = new System.Drawing.Size(190, 33);
             this.lbInicio.TabIndex = 1;
             this.lbInicio.Text = "Inicia sesión";
+            this.lbInicio.Click += new System.EventHandler(this.LbInicio_Click);
             // 
             // lbUsuario
             // 
@@ -108,6 +110,7 @@
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.Red;
+            this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.Location = new System.Drawing.Point(565, 19);
             this.btnSalir.Name = "btnSalir";
@@ -131,7 +134,7 @@
             this.Controls.Add(this.lbInicio);
             this.Controls.Add(this.btnEntrar);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -19,12 +19,12 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            string user = "juancho", pass = "123frijoles";
+            string user = "juancho", pass = "123tamarindo";
             if (txtUsuario.Text.ToString().Trim() == user)
             {
                 if (txtContra.Text.ToString().Trim() == pass)
@@ -40,6 +40,8 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show("Usuario incorrecto, inténtelo de nuevo.");
             }
+            txtContra.Text = "";
+            txtUsuario.Text = "";
         }
 
         private void TxtUsuario_TextChanged(object sender, EventArgs e)
@@ -60,6 +62,11 @@ namespace WindowsFormsApp1
         private void BtnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void LbInicio_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
