@@ -25,9 +25,9 @@ namespace WindowsFormsApp1
         private void Button1_Click(object sender, EventArgs e)
         {
             string user = "juancho", pass = "123tamarindo";
-            if (txtUsuario.Text.ToString().Trim() == user)
+            if (txtUsuario.Text.ToLower() == user)
             {
-                if (txtContra.Text.ToString().Trim() == pass)
+                if (txtContra.Text.ToLower() == pass)
                 {
                     MessageBox.Show("Sesión iniciada correctamente");
                 }
